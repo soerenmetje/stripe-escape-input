@@ -1,5 +1,5 @@
-const escapeInput = require("../lib");
-const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+const escapeInput = require("../lib")
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
 
 
 async function main()  {
@@ -10,7 +10,7 @@ async function main()  {
 
     let subscriptions = await stripe.subscriptions.search({
         query: `metadata['myField']: '${escapeInput(userInput)}'`
-    });
+    })
     console.log(subscriptions) // all subscriptions ever due to injection
 
     // [Serve subscriptions to user]
