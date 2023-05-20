@@ -1,0 +1,36 @@
+{
+  "name": "stripe-escape-input",
+  "version": "1.0.0",
+  "description": "Prevent injections in Stripe search queries by escaping user input",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "stripe",
+    "escape",
+    "search",
+    "query"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soerenmetje/stripe-escape-input.git"
+  },
+  "author": "Soeren Metje",
+  "bugs": {
+    "url": "https://github.com/soerenmetje/stripe-escape-input/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "stripe": "^12.6.0",
+    "jest": "^29.5.0"
+  }
+}
