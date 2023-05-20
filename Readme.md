@@ -23,8 +23,12 @@ The principle is basically the same as in SQL injections.
 
 To prevent injections, we need to escape the user input before using it in a Stripe search query.
 
+```shell
+npm i stripe-escape-input
+```
+
 ``` javascript
-const escapeInput = require("@soerenmetje/stripe-escape-input")
+const escapeInput = require("stripe-escape-input")
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
 
 const userInput = "124' OR created>0 OR status:'active"
