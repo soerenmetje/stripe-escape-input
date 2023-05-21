@@ -16,7 +16,7 @@ console.log(subscriptions) // all subscriptions ever due to injection
 ```
 
 A user input that is directly used in a Stripe search query is vulnerable to injections. 
-This can be exploited to gain access to all Stripe objects.
+This can be exploited to gain access to all records.
 The principle is basically the same as in SQL injections.
 
 ## Solution
